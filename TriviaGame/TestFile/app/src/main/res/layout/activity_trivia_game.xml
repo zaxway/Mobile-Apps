@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohitjain.testfile.TriviaGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="228dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="@font/diplomata"
+            android:text="Android Trivia"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="playButton"
+            android:text="Play"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="127dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="wordButton"
+            android:text="Add Word"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="179dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="historyButton"
+            android:text="Show History"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <Button
+            android:id="@+id/topten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="topTenActivity"
+            android:text="Top Ten Scores" />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Take Profile Picture" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="signOut"
+            android:text="Back To Login Screen" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="167dp"
+            android:layout_height="209dp"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/common_full_open_on_phone" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
